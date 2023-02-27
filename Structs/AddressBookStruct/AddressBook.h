@@ -1,5 +1,5 @@
-#ifndef TEST_H
-#define TEST_H
+#ifndef ADDRESSBOOK_H
+#define ADDRESSBOOK_H
 
 #include <iostream>
 #include "Entry.h"
@@ -38,7 +38,7 @@ struct AddressBook
       point = point->next;
     }
     // And then make that next node equal to our current entry
-    current = point->next;
+    point->next = current;
   }
 
   // Print function
