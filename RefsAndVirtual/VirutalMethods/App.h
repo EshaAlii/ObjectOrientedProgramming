@@ -106,7 +106,7 @@ class CircleWin : public AppWindow
     }
 
     // Resize Function
-    virtual void resize(int w, int h)
+    void resize(int w, int h) override
     {
       // If the height is greater than the width...
       if (h > w)
@@ -169,7 +169,7 @@ class RectWin : public AppWindow
     }
 
     // Resize Function
-    virtual void resize(int w, int h)
+    void resize(int w, int h) override
     {
       // Set area equal to the width multiplied by the height
       area = w * h;
